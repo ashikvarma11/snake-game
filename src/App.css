@@ -1,0 +1,136 @@
+:root{
+    --white: #FAFAF6;
+    --red:#F85959;
+    --black:#292929;
+    --green:#30E3CA;
+    --brown: #5D5D5A;
+    --orange: #FEB062;
+    letter-spacing: 0.14rem;
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 0.8vw;
+}
+.wrapper{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+.canvas {
+    margin: 5em auto;
+    display: block;
+    background-color: var(--white);
+}
+
+.start-btn{
+    
+    border: 3px solid var(--white);
+    width:30%;
+    padding: 0.5em 0.7em;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top:2em;
+}
+
+.landing-text{
+    display:flex;
+    margin-left:3em;
+    
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.score-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-label{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.score-value{
+    font-size: 7rem;
+    font-weight: 800;
+    margin-top:0.7em;
+}
+
+.rules-section{
+    margin-top:4em;
+    display: flex;
+    width:50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rules-heading{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.rule{
+    padding: 1.5em 0;
+    font-weight: 500;
+    position: relative;
+    word-wrap: break-word;
+}
+/* 
+.rule::before{
+    content:'';
+    position: absolute;
+    width:10px;
+    height:10px;
+    left:12em;
+    background-color: var(--white);
+    border: 2px solid var(--white); 
+    border-radius: 50%;
+} */
+
+.logo{
+    position: absolute;
+    left:2em;
+    top:2em;
+    font-weight: 700;
+}
+
+.game-over{
+    position:absolute;
+    left:50%;
+    top:45%;
+    z-index: 1;
+    color: var(--black);
+    font-size:7rem;
+    font-weight: 700;
+}
+
+/* dots */
+
+.dot{
+    width:20px;
+    height:20px;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    top:30%;
+    
+    left:-15%;
+}
+
+
+.green{
+    background-color: var(--green);
+}
+
+.orange{
+    background-color: var(--orange);
+}
+.red{
+    background-color: var(--red);
+} 
