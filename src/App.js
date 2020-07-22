@@ -130,6 +130,7 @@ const App = () => {
     setDir([0, -1]);
     setSpeed(SPEED);
     setGameOver(false);
+    setScore(0);
   };
 
   useEffect(() => {
